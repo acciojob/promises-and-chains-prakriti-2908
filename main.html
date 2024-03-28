@@ -7,6 +7,14 @@
 
   <body>
     <!-- write the body here -->
+	  <form id="simpleForm" name="myForm" action="/action_page.php" 
+		  onsubmit="return validateForm()" method="post">
+		  <label for="fname">name:</label> 
+		  <input type="text" name="fname" id="name">
+		  <label for="fage">age:</label> 
+		  <input type="number" name="fage" id="age">
+		  <button is="btn" type="submit">Submit</button>
+</form>
 
     <script type="text/javascript" src="./script.js"></script>
   </body>
