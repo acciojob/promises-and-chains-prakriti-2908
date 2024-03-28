@@ -6,12 +6,8 @@ async function validateForm(e) {
   try{  
 	  let x =  document.forms["myForm"]["fname"].value;
   let y =  document.forms["myForm"]["fage"].value;
-  if (x == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-  if (y == "") {
-    alert("Age must be filled out");
+  if (x == "" || y=="") {
+    alert("Please enter valid details");
     return false;
   }
 	else{
